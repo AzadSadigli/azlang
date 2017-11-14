@@ -96,6 +96,8 @@
                                 <button type="submit" class="btn btn-primary">
                                     Register
                                 </button>
+                                <a href="/login">Already registered?</a>
+
                             </div>
                         </div>
                     </form>
