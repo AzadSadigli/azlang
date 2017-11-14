@@ -23,6 +23,9 @@ Route::get('/left-sidebar',function(){
 Route::get('/right-sidebar',function(){
     return view('right-sidebar');
 });
+Route::get('/admin', function(){
+	return view('admin.index');
+});
 
 Auth::routes();
 

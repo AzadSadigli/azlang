@@ -1,6 +1,9 @@
-@extends('layouts.app')
-
-@section('content')
+@include('layouts.header')
+@include('layouts.master')
+<br>
+<br>
+<br>
+<br>
 <div class="container">
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
@@ -20,4 +23,10 @@
         </div>
     </div>
 </div>
-@endsection
+<br>
+<br>
+<br>
+<br>
+
+
+@include('layouts.footer')
