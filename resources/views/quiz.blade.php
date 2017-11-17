@@ -1,17 +1,10 @@
-
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-	<head>
-		@include('layouts.master')
-	</head>
+<html class="no-js"> 
+<head>
+	@include('layouts.master')
+</head>
 	<body>
-@include('layouts.header')
-
-	<!-- END .header -->
-
+	@include('layouts.header')
 	<aside class="fh5co-page-heading">
 		<div class="container">
 			<div class="row">
@@ -20,31 +13,39 @@
 						Question 1
 						<span class="fh5co-border"></span>
 					</h1>
-
 				</div>
 			</div>
 		</div>
 	</aside>
-
 	<div id="fh5co-main">
-
 		<div class="container">
 			<div class="row">
 				<div class="col-md-8 col-md-push-4">
-					<h2>Lorem ipsum dolor sit amet.</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quis et recusandae atque, quos, dolore, rem, obcaecati ratione nesciunt similique accusamus? Esse ullam laboriosam error temporibus saepe totam asperiores hic at, eius officiis expedita ex corporis iusto deleniti ratione, possimus perspiciatis sunt consequatur, unde assumenda, nisi odit facilis quis ut!</p>
+					<h2>{{$ques->id}}. {{$ques-> question_body}}</h2>
+					<p></p>
 					<form action="">
-					  <input type="radio" name="gender" value="male"> Male<br>
-					  <input type="radio" name="gender" value="female"> Female<br>
-					  <input type="radio" name="gender" value="other"> Other
+						@if(!count($ques->ans_1)==0)
+						  <input type="radio" name="gender" value="male"> {{$ques->ans_1}} <br>
+						@endif
+						@if(!count($ques->ans_2)==0)
+						  <input type="radio" name="gender" value="male"> {{$ques->ans_2}}<br>
+						@endif
+						@if(!count($ques->ans_3)==0)
+						  <input type="radio" name="gender" value="male"> {{$ques->ans_3}}<br>
+						@endif
+						@if(!count($ques->ans_4)==0)
+						  <input type="radio" name="gender" value="male"> {{$ques->ans_4}}<br>
+						@endif
+						@if(!count($ques->ans_5)==0)
+						  <input type="radio" name="gender" value="male"> {{$ques->ans_5}}<br>
+						@endif
 					</form>
-
 					<!-- <div class="row">
 						<div class="col-md-6">
-							<p><a href="images/slide_1.jpg" class="image-popup"><img src="images/slide_1.jpg" alt="FREEHTML5.co Free HTML5 Template" class="img-responsive img-rounded"></a></p>
+							<p><a href="images/slide_1.jpg" class="image-popup"><img src="images/slide_1.jpg" class="img-responsive img-rounded"></a></p>
 						</div>
 						<div class="col-md-6">
-							<p><a href="images/slide_2.jpg" class="image-popup"><img src="images/slide_2.jpg" alt="FREEHTML5.co Free HTML5 Template" class="img-responsive img-rounded"></a></p>
+							<p><a href="images/slide_2.jpg" class="image-popup"><img src="images/slide_2.jpg" class="img-responsive img-rounded"></a></p>
 						</div>
 					</div> -->
 					<div class="fh5co-spacer fh5co-spacer-xxs"></div>
@@ -72,19 +73,12 @@
 							</ul>
 						</div>
 					</div> -->
-
 				</div>
-
 				@include('layouts.leftside')
-
 			</div>
 		</div>
 	</div>
-
 	<div class="fh5co-spacer fh5co-spacer-lg"></div>
-
-@include('layouts.footer')
-
-
+	@include('layouts.footer')
 	</body>
 </html>

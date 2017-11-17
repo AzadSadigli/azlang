@@ -23,18 +23,19 @@
 						  		
 							@else
 							 <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="text-transform: capitalize;" role="button" aria-expanded="false">
                                     {{ Auth::user()->name }} <span class="caret"></span>
                                 </a>
 
                                 <ul class="dropdown-menu" role="menu">
-                                	<li><a href="/elements"><span>Elements <span class="border"></span></span></a></li>
+                                	<li><a href="/admin"><span style="text-transform: capitalize;">Admin Panel <span class="border"></span></span></a></li>
+                                	<li><a href="/elements"><span style="text-transform: capitalize;">Elements <span class="border"></span></span></a></li>
 
                                     <li>
                                         <a href="{{ route('logout') }}"
                                             onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
-                                           <span> Logout  <span class="border"></span> <span>
+                                           <span style="text-transform: capitalize;"> Logout  <span class="border"></span> <span>
                                         </a>
 
                                         <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">

@@ -36,13 +36,16 @@
 						<li><a href="#">
 							Support
 						</a></li>
-						<li class="nav-user dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-								<img src="{{ asset('admindesign/images/user.png')}}" class="nav-avatar" />
-								<b class="caret"></b>
-							</a>
-							<ul class="dropdown-menu">
-								<li>
+						 <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" style="text-transform: capitalize;" aria-expanded="false">
+                                    {{ Auth::user()->name }} <span class="caret"></span>
+                                </a>
+
+                                <ul class="dropdown-menu" role="menu">
+                                	<li><a href="/admin"><span>Admin Panel <span class="border"></span></span></a></li>
+                                	<li><a href="/elements"><span>Elements <span class="border"></span></span></a></li>
+
+                                    <li>
                                         <a href="{{ route('logout') }}"
                                             onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
@@ -53,8 +56,8 @@
                                             {{ csrf_field() }}
                                         </form>
                                     </li>
-							</ul>
-						</li>
+                                </ul>
+                            </li>
 					</ul>
 				</div><!-- /.nav-collapse -->
 			</div>

@@ -5,7 +5,7 @@
     <ul class="fh5co-post">
       <li>
         <a href="#">
-          <div class="fh5co-post-media"><img src="images/slide_1.jpg" alt="FREEHTML5.co Free HTML5 Template"></div>
+          <div class="fh5co-post-media"><img src="{{ asset('images/slide_1.jpg')}}" ></div>
           <div class="fh5co-post-blurb">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
             <span class="fh5co-post-meta">Oct. 12, 2015</span>
@@ -14,7 +14,7 @@
       </li>
       <li>
         <a href="#">
-          <div class="fh5co-post-media"><img src="images/slide_2.jpg" alt="FREEHTML5.co Free HTML5 Template"></div>
+          <div class="fh5co-post-media"><img src="{{ asset('images/slide_2.jpg')}}" ></div>
           <div class="fh5co-post-blurb">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
             <span class="fh5co-post-meta">Oct. 12, 2015</span>
@@ -23,7 +23,7 @@
       </li>
       <li>
         <a href="#">
-          <div class="fh5co-post-media"><img src="images/slide_3.jpg" alt="FREEHTML5.co Free HTML5 Template"></div>
+          <div class="fh5co-post-media"><img src="{{ asset('images/slide_3.jpg')}}" ></div>
           <div class="fh5co-post-blurb">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
             <span class="fh5co-post-meta">Oct. 12, 2015</span>

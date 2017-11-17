@@ -29,7 +29,7 @@
 
 						<div class="module">
 							<div class="module-head">
-								<h3>Forms</h3>
+								<h3>Add Gramma</h3>
 							</div>
 							<div class="module-body">
 
@@ -43,97 +43,45 @@
 											</div>
 										</center>
 								@endif
-
-							<!-- text area starts  -->
-
-			               <!--   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
-			                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/codemirror.min.css">
-			                 <link href="https://cdnjs.cloudflare.com/ajax/libs/froala-editor/2.6.0/css/froala_editor.pkgd.min.css" rel="stylesheet" type="text/css" /><link href="https://cdnjs.cloudflare.com/ajax/libs/froala-editor/2.6.0/css/froala_style.min.css" rel="stylesheet" type="text/css" />
-
-			                <textarea id="froala-editor">Initialize the Froala WYSIWYG HTML Editor on a textarea.</textarea>
-			                  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-			                  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/codemirror.min.js"></script>
-			                  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/mode/xml/xml.min.js"></script>
-			                  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/froala-editor/2.6.0//js/froala_editor.pkgd.min.js"></script>
-			                  <script type="text/javascript">
-			                      $(function() {
-			                      $('textarea#froala-editor').froalaEditor()
-			                    }); 
-			                  </script>
- -->
-			                 <!-- textarea part -->
-
-									<!-- <div class="alert">
-										<button type="button" class="close" data-dismiss="alert">×</button>
-										<strong>Warning!</strong> Something fishy here!
-									</div>
-									<div class="alert alert-error">
-										<button type="button" class="close" data-dismiss="alert">×</button>
-										<strong>Oh snap!</strong> Whats wrong with you? 
-									</div>
-									<div class="alert alert-success">
-										<button type="button" class="close" data-dismiss="alert">×</button>
-										<strong>Well done!</strong> Now you are listening me :) 
-									</div> -->
-
 									<br />
 
-									<form class="form-horizontal row-fluid" method="POST" action="/addquestion">
+									<form class="form-horizontal row-fluid" method="POST" action="/addgramma">
 										 {{ csrf_field() }}
+
 										<div class="control-group">
-											<label class="control-label" for="basicinput">Choose Topic</label>
+											<label class="control-label" for="basicinput">Topic</label>
 											<div class="controls">
-												<select name="topic_id" tabindex="1" data-placeholder="Select here.." class="span8" required="">
-													<option value="" selected="" disabled="">Select here..</option>
+												<select tabindex="1" name="topic_id" data-placeholder="Select here.." class="span8">
+													<option value="" selected="" disabled="">Select topic..</option>
 													@php
 													$topic = App\Topic::all()
 													@endphp
 													@foreach($topic as $topic)
-													<option name="topic_id" value="{{$topic->id}}">{{$topic->name_topic}}</option>
+													<option value="{{$topic->id}}">{{$topic->name_topic}}</option>
 													@endforeach
 												</select>
 											</div>
 										</div>
+
 										<div class="control-group">
-											<label class="control-label" for="basicinput">Question</label>
+											<label class="control-label" for="basicinput">Gramma</label>
 											<div class="controls">
-												<textarea class="span8" name="question_body" placeholder="Question..." rows="5" required=""></textarea>
+												<textarea class="span8" name="gramma_body" placeholder="Gramma..." rows="5"></textarea>
 											</div> 
 										</div>
-										<span class="help-inline"><i>Minimum 5 Characters</i></span> <br>
-
-
 										<div class="control-group">
-											<label class="control-label" for="basicinput">Answer A</label>
+											<label class="control-label" for="basicinput">Definition 1</label>
 											<div class="controls">
-												<input type="text" id="basicinput" name="ans_1" placeholder="Type something here..." class="span8">
-											</div>
+												<textarea class="span8" name="definition_1" placeholder="Definition..." rows="5"></textarea>
+											</div> 
 										</div>
 										<div class="control-group">
-											<label class="control-label" for="basicinput">Answer B</label>
+											<label class="control-label" for="basicinput">Definition 2</label>
 											<div class="controls">
-												<input type="text" id="basicinput" name="ans_2" placeholder="Type something here..." class="span8">
-											</div>
+												<textarea class="span8" name="definition_2" placeholder="Definition..." rows="5"></textarea>
+											</div> 
 										</div>
-										<div class="control-group">
-											<label class="control-label" for="basicinput">Answer C</label>
-											<div class="controls">
-												<input type="text" id="basicinput" name="ans_3" placeholder="Type something here..." class="span8">
-											</div>
-										</div>
-										<div class="control-group">
-											<label class="control-label" for="basicinput">Answer D</label>
-											<div class="controls">
-												<input type="text" id="basicinput" name="ans_4" placeholder="Type something here..." class="span8">
-											</div>
-										</div>
-										<div class="control-group">
-											<label class="control-label" for="basicinput">Answer E</label>
-											<div class="controls">
-												<input type="text" id="basicinput" name="ans_5" placeholder="Type something here..." class="span8">
-											</div>
-										</div>
-										
+										<!-- <span class="help-inline"><i>Minimum 5 Characters</i></span> <br> -->
 
 
 										<!-- <div class="control-group">
