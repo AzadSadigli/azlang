@@ -62,6 +62,8 @@ class AdminController extends Controller
     public function addgramma(Request $req){
     	$gramma = new Gramma;
     	$gramma->gramma = $req->gramma;
+    	$gramma->title = $req->title;
+    	$gramma->topic_id = $req->topic_id;
     	$gramma->definition_1 = $req->definition_1;
     	$gramma->definition_2 = $req->definition_2;
     	$gramma->save();

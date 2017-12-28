@@ -4,12 +4,12 @@
 			<div class="container-fluid">
 				<div class="navbar-header">
 					<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#fh5co-navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
-					<a class="navbar-brand" href="/"><img src="{{ asset('images/jadelogo.SVG')}}" height="35px"></a>
+					<a class="navbar-brand" href="/"><img src="{{ asset('images/azlanglogo.PNG')}}" height="40px"></a>
 				</div>
 				<div id="fh5co-navbar" class="navbar-collapse collapse">
 					<ul class="nav navbar-nav navbar-right">
 						<li class="active"><a href="/"><span>Home <span class="border"></span></span></a></li>
-						<li><a href="/left-sidebar"><span>Left Sidebar <span class="border"></span></span></a></li>
+						<!-- <li><a href="/left-sidebar"><span>Left Sidebar <span class="border"></span></span></a></li> -->
 						   @guest
 						   <li class="dropdown">
 						   		<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
@@ -28,6 +28,7 @@
                                 </a>
 
                                 <ul class="dropdown-menu" role="menu">
+                                	<li><a href="/home"><span style="text-transform: capitalize;">Profile <span class="border"></span></span></a></li>
                                 	<li><a href="/admin"><span style="text-transform: capitalize;">Admin Panel <span class="border"></span></span></a></li>
                                 	<li><a href="/elements"><span style="text-transform: capitalize;">Elements <span class="border"></span></span></a></li>
 

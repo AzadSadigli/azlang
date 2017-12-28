@@ -11,10 +11,10 @@
 					<div class="fh5co-footer-widget">
 						<ul class="fh5co-social">
 							<li><a href="#"><i class="icon-facebook"></i></a></li>
-							<li><a href="#"><i class="icon-twitter"></i></a></li>
+							<!-- <li><a href="#"><i class="icon-twitter"></i></a></li> -->
 							<li><a href="#"><i class="icon-instagram"></i></a></li>
-							<li><a href="#"><i class="icon-linkedin"></i></a></li>
-							<li><a href="#"><i class="icon-youtube"></i></a></li>
+							<!-- <li><a href="#"><i class="icon-linkedin"></i></a></li> -->
+							<!-- <li><a href="#"><i class="icon-youtube"></i></a></li> -->
 						</ul>
 					</div>
 				</div>
@@ -23,11 +23,7 @@
 					<div class="fh5co-footer-widget top-level">
 						<h4 class="fh5co-footer-lead ">Company</h4>
 						<ul>
-							<li><a href="#">About</a></li>
-							<li><a href="#">Contact</a></li>
-							<li><a href="#">News</a></li>
-							<li><a href="#">Support</a></li>
-							<li><a href="#">Career</a></li>
+							<li><a href="">About</a></li>
 						</ul>
 					</div>
 				</div>
@@ -38,11 +34,9 @@
 					<div class="fh5co-footer-widget top-level">
 						<h4 class="fh5co-footer-lead">Features</h4>
 						<ul class="fh5co-list-check">
-							<li><a href="#">Lorem ipsum dolor.</a></li>
-							<li><a href="#">Ipsum mollitia dolore.</a></li>
-							<li><a href="#">Eius similique in.</a></li>
-							<li><a href="#">Aspernatur similique nesciunt.</a></li>
-							<li><a href="#">Laboriosam ad commodi.</a></li>
+							<li><a href="#">To help you learn Azerbaijani language.</a></li>
+							<li><a href="#">To help you to check yourself by quizes.</a></li>
+							<!-- <li><a href="#"></a></li> -->
 						</ul>
 					</div>
 				</div>

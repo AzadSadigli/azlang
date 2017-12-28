@@ -34,11 +34,11 @@
 							<div class="module-body">
 
 								<br>
-								@if(Session::has('succ3'))
+								@if(Session::has('gramma_added'))
 										<center>
 											<div class="col-md-4" style="width:90%;">
 												<div class="alert alert-success">
-													{{Session::get('succ3')}}
+													{{Session::get('gramma_added')}}
 												</div>
 											</div>
 										</center>
@@ -51,7 +51,7 @@
 										<div class="control-group">
 											<label class="control-label" for="basicinput">Topic</label>
 											<div class="controls">
-												<select tabindex="1" name="topic_id" data-placeholder="Select here.." class="span8">
+												<select tabindex="1" name="topic_id" data-placeholder="Select here.." class="span8" required="">
 													<option value="" selected="" disabled="">Select topic..</option>
 													@php
 													$topic = App\Topic::all()
@@ -62,11 +62,17 @@
 												</select>
 											</div>
 										</div>
+										<div class="control-group">
+											<label class="control-label" for="basicinput">Title</label>
+											<div class="controls">
+												<input type="text" id="basicinput" name="title" placeholder="Type title here..." class="span8">
+											</div>
+										</div>
 
 										<div class="control-group">
 											<label class="control-label" for="basicinput">Gramma</label>
 											<div class="controls">
-												<textarea class="span8" name="gramma_body" placeholder="Gramma..." rows="5"></textarea>
+												<textarea class="span8" name="gramma" placeholder="Gramma..." rows="5" required=""></textarea>
 											</div> 
 										</div>
 										<div class="control-group">

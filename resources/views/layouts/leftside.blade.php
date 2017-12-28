@@ -1,4 +1,4 @@
-<div class="col-md-4 col-md-pull-8">
+<div class="col-md-4 col-md-pull-8" style="box-shadow: 1px 1px 0px 0px black;">
 
   <div class="fh5co-sidebox">
     <h3 class="fh5co-sidebox-lead">Image List</h3>

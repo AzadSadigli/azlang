@@ -41,19 +41,21 @@
 											<!-- <th>B</th> -->
 											<!-- <th>C</th> -->
 											<!-- <th>D</th> -->
-											<!-- <th>E</th> -->
+											<th>Options</th>
 											<th>Correct Answers</th>
+											<th>Change</th>
 										</tr>
 									</thead>
 									<tbody width="100%">
 										@foreach($ques as $ques)
 										<tr class="odd gradeX">
 											<td><a href="/answers/{{$ques->id}}">{{$ques -> question_body}}</a></td>
-											<!-- <td>{{$ques -> ans_1}}</td> -->
-											<!-- <td>{{$ques -> ans_2}}</td> -->
-											<!-- <td class="center"> {{$ques -> ans_3}}</td> -->
-											<!-- <td class="center">{{$ques-> ans_4}}</td> -->
-											<!-- <td class="center">{{$ques-> ans_5}}</td> -->
+											<td>
+												<b style="color: blue;"> A.</b> {{$ques -> ans_1}}</br>
+												<b style="color: blue;"> B.</b> {{$ques -> ans_2}}</br>
+												<b style="color: blue;"> C.</b> {{$ques -> ans_3}}</br>
+												<b style="color: blue;"> D.</b> {{$ques-> ans_4}}</br>
+												<b style="color: blue;"> E.</b> {{$ques-> ans_5}}</td>
 											<td>
 												@if($ques->correct_ans_1 == 1)
 												A
@@ -71,6 +73,35 @@
 												E
 												@endif
 											</td>
+											<td>
+												<a type="button" class="btn btn-danger" data-toggle="modal" data-target="#myModal-{{$ques->id}}">Change</a>
+												<!-- Modal -->
+												<div id="myModal-{{$ques->id}}" class="modal fade" role="dialog">
+												  <div class="modal-dialog">
+												    <!-- Modal content-->
+												    <div class="modal-content">
+												      <div class="modal-header">
+												        <button type="button" class="close" data-dismiss="modal">&times;</button>
+												        <h4 class="modal-title">Correct Answer</h4>
+												      </div>
+												      <div class="modal-body">
+												        <p>
+												        	<form>
+															  <input type="radio" name="correct_answer" value="a" checked> A<br>
+															  <input type="radio" name="correct_answer" value="b"> B<br>
+															  <input type="radio" name="correct_answer" value="c"> C <br>
+															  <input type="radio" name="correct_answer" value="d" checked> D<br>
+															  <input type="radio" name="correct_answer" value="e"> E<br>
+															</form> 
+												        </p>
+												      </div>
+												      <div class="modal-footer">
+												        <a type="button" class="btn btn-danger" data-dismiss="modal">Close</a>
+												      </div>
+												    </div>
+												  </div>
+												</div>
+											</td>
 										</tr>
 										@endforeach
 									</tbody>
@@ -81,8 +112,9 @@
 											<!-- <th>B</th> -->
 											<!-- <th>C</th> -->
 											<!-- <th>D</th> -->
-											<!-- <th>E</th> -->
+											<th>Options</th>
 											<th>Correct Answers</th>
+											<th>Change</th>
 										</tr>
 									</tfoot>
 								</table>

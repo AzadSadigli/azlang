@@ -73,6 +73,12 @@
 										<a href="/grammalist">
 											<i class="icon-inbox"></i>
 											Gramma List
+											 <b class="label green pull-right">
+												 @php
+													$gr = App\Gramma::all()
+												 @endphp
+												{{count($gr)}}
+											</b>
 										</a>
 									</li>
 									<li>

@@ -1,6 +1,6 @@
 <div class="fh5co-slider">
   <div class="owl-carousel owl-carousel-fullwidth">
-      <div class="item" style="background-image:url(images/slide_2.jpg)">
+      <div class="item" style="background-image:url(images/slider_3.jpg)">
         <div class="fh5co-overlay"></div>
         <div class="container">
           <div class="row">
@@ -21,7 +21,7 @@
           </div>
         </div>
       </div>
-      <div class="item" style="background-image:url(images/slide_2.jpg)">
+      <div class="item" style="background-image:url(images/slider_3.jpg)">
         <div class="fh5co-overlay"></div>
         <div class="container">
           <div class="row">
@@ -42,7 +42,7 @@
           </div>
         </div>
       </div>
-      <div class="item" style="background-image:url(images/slide_3.jpg)">
+      <div class="item" style="background-image:url(images/slider_3.jpg)">
         <div class="fh5co-overlay"></div>
         <div class="container">
           <div class="row">
@@ -63,7 +63,7 @@
           </div>
         </div>
       </div>
-      <div class="item" style="background-image:url(images/slide_4.jpg)">
+      <div class="item" style="background-image:url(images/slider_3.jpg)">
         <div class="fh5co-overlay"></div>
         <div class="container">
           <div class="row">

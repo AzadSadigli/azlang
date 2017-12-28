@@ -33,7 +33,13 @@
 							<div class="fh5co-feature-text">
 								<h3>Learn Gramma</h3>
 								<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
-								<p><a href="#">Read more</a></p>
+								<p>
+									@guest
+									<a href="/register">Read more</a>
+									@else
+									<a href="/home">Read more</a>
+									@endguest
+								</p>
 							</div>
 						</div>
 						<div class="fh5co-feature no-border">
@@ -53,7 +59,7 @@
 								<i class="icon-microphone"></i>
 							</div>
 							<div class="fh5co-feature-text">
-								<h3></h3>
+								<h3>What is your level?</h3>
 								<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
 								<p><a href="#">Read more</a></p>
 							</div>
@@ -65,7 +71,27 @@
 							<div class="fh5co-feature-text">
 								<h3>24/7 Support</h3>
 								<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
-								<p><a href="#">Read more</a></p>
+								<p>
+									<a type="button" style="cursor: pointer;" data-toggle="modal" data-target="#myModal">Read more</a>
+									<!-- Modal -->
+									<div id="myModal" class="modal fade" role="dialog">
+									  <div class="modal-dialog">
+									    <!-- Modal content-->
+									    <div class="modal-content">
+									      <div class="modal-header">
+									        <button type="button" class="close" data-dismiss="modal">&times;</button>
+									        <h4 class="modal-title">Not Working</h4>
+									      </div>
+									      <div class="modal-body">
+									        <p>This function has not started to work, yet.</p>
+									      </div>
+									      <div class="modal-footer">
+									        <a type="button" class="btn btn-danger" data-dismiss="modal">Close</a>
+									      </div>
+									    </div>
+									  </div>
+									</div>
+								</p>
 							</div>
 						</div>
 					</div>
@@ -75,9 +101,9 @@
 		<!-- Features -->
 
 
-		<div class="fh5co-spacer fh5co-spacer-lg"></div>
+		<!-- <div class="fh5co-spacer fh5co-spacer-lg"></div> -->
 		<!-- Products -->
-		<div class="container" id="fh5co-products">
+		<!-- <div class="container" id="fh5co-products">
 			<div class="row text-left">
 				<div class="col-md-8">
 					<h2 class="fh5co-section-lead">Products</h2>
@@ -121,31 +147,31 @@
 				</div>
 
 			</div>
-		</div>
+		</div> -->
 		<!-- Products -->
-		<div class="fh5co-spacer fh5co-spacer-lg"></div>
+		<!-- <div class="fh5co-spacer fh5co-spacer-lg"></div> -->
 
-		<div id="fh5co-clients">
+		<!-- <div id="fh5co-clients">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-client-logo text-center to-animate"><img src="images/client_1.png" alt="FREEHTML5.co Free HTML5 Bootstrap Template" class="img-responsive"></div>
-					<div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-client-logo text-center to-animate"><img src="images/client_2.png" alt="FREEHTML5.co Free HTML5 Bootstrap Template" class="img-responsive"></div>
+					<div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-client-logo text-center to-animate"><img src="images/client_1.png" class="img-responsive"></div>
+					<div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-client-logo text-center to-animate"><img src="images/client_2.png" class="img-responsive"></div>
 					<div class="visible-sm-block visible-xs-block clearfix"></div>
-					<div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-client-logo text-center to-animate"><img src="images/client_3.png" alt="FREEHTML5.co Free HTML5 Bootstrap Template" class="img-responsive"></div>
-					<div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-client-logo text-center to-animate"><img src="images/client_4.png" alt="FREEHTML5.co Free HTML5 Bootstrap Template" class="img-responsive"></div>
+					<div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-client-logo text-center to-animate"><img src="images/client_3.png" class="img-responsive"></div>
+					<div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-client-logo text-center to-animate"><img src="images/client_4.png" class="img-responsive"></div>
 				</div>
 			</div>
-		</div>
+		</div> -->
 
-		<div class="fh5co-bg-section" style="background-image: url(images/slide_2.jpg); background-attachment: fixed;">
+		<div class="fh5co-bg-section" style="background-image: url(images/slider_2.jpg); background-attachment: fixed;">
 			<div class="fh5co-overlay"></div>
 			<div class="container">
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2">
 						<div class="fh5co-hero-wrap">
 							<div class="fh5co-hero-intro text-center">
-								<h1 class="fh5co-lead"><span class="quo">&ldquo;</span>Design is not just what it looks like and feels like. Design is how it works. <span class="quo">&rdquo;</span></h1>
-								<p class="author">&mdash; <cite>Steve Jobs</cite></p>
+								<h1 class="fh5co-lead"><span class="quo">&ldquo;</span>Learn everything you can, anytime you can, from anyone you can; there will always come a time when you will be grateful you did. <span class="quo">&rdquo;</span></h1>
+								<p class="author">&mdash; <cite>Sarah Caldwell</cite></p>
 							</div>
 						</div>
 					</div>

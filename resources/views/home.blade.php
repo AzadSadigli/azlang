@@ -18,6 +18,29 @@
                     @endif
 
                     You are logged in!
+
+                    <ul>
+                        @php
+                        $topic = App\Topic::all()
+                        @endphp
+                        @foreach($topic as $topic)
+                        <li>
+                            <a  class="" style="cursor: pointer; color: gray; font-size: 15px;" data-toggle="collapse" data-target="#demo-{{$topic->id}}"><b>{{$topic->name_topic}}</b></a>
+                           <div id="demo-{{$topic->id}}" class="collapse">
+                                <ul>
+                                    @php
+                                    $gram = App\Gramma::all()
+                                    @endphp
+                                    @foreach($gram as $gram)
+                                    @if($gram->topic_id == $topic->id)
+                                    <li><a href="/gramma/{{$gram->id}}" style=" color: gray; font-size: 15px;"><b>{{$gram->title}}</b></a></li>
+                                    @endif
+                                    @endforeach
+                                </ul>
+                            </div>
+                         </li>
+                        @endforeach
+                    </ul>
                 </div>
             </div>
         </div>

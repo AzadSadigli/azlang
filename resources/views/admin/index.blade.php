@@ -15,15 +15,11 @@
 <body>
 
 @include('admin.header')
-
-
 	<div class="wrapper">
 		<div class="container">
 			<div class="row">
 				@include('admin.adminsidebar')
 				<!--/.span3-->
-
-
 				<div class="span9">
 					<div class="content">
 
