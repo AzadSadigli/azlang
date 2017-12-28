@@ -30,7 +30,6 @@
                                 <ul class="dropdown-menu" role="menu">
                                 	<li><a href="/home"><span style="text-transform: capitalize;">Profile <span class="border"></span></span></a></li>
                                 	<li><a href="/admin"><span style="text-transform: capitalize;">Admin Panel <span class="border"></span></span></a></li>
-                                	<li><a href="/elements"><span style="text-transform: capitalize;">Elements <span class="border"></span></span></a></li>
 
                                     <li>
                                         <a href="{{ route('logout') }}"
