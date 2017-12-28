@@ -6,7 +6,7 @@
 				<div class="col-md-6 col-sm-6">
 					<div class="fh5co-footer-widget">
 						<h2 class="fh5co-footer-logo">Why Azerbaijani?</h2>
-						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+						<p>As far as there are many language mobile application and web application for almost every language, but there are very few apps for Azerbaijani language. This is why this website with its Android application will serve language learners. </p>
 					</div>
 					<div class="fh5co-footer-widget">
 						<ul class="fh5co-social">
@@ -44,11 +44,8 @@
 					<div class="fh5co-footer-widget top-level">
 						<h4 class="fh5co-footer-lead ">Products</h4>
 						<ul class="fh5co-list-check">
-							<li><a href="#">Lorem ipsum dolor.</a></li>
-							<li><a href="#">Ipsum mollitia dolore.</a></li>
-							<li><a href="#">Eius similique in.</a></li>
-							<li><a href="#">Aspernatur similique nesciunt.</a></li>
-							<li><a href="#">Laboriosam ad commodi.</a></li>
+							<li><a href="#">Language teacher</a></li>
+							<li><a href="#">Director</a></li>
 						</ul>
 					</div>
 				</div>

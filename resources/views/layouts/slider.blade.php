@@ -7,7 +7,7 @@
             <div class="col-md-8 col-md-offset-2">
               <div class="fh5co-owl-text-wrap">
                 <div class="fh5co-owl-text text-center to-animate">
-                  <h1 class="fh5co-lead">Studio</h1>
+                  <h1 class="fh5co-lead">First Title</h1>
                 <h2 class="fh5co-sub-lead">
                   @guest
                   <a href="/left-sidebar" class="btn" style="background-color:orange;">Start to learn</a>
@@ -28,7 +28,7 @@
             <div class="col-md-8 col-md-offset-2">
               <div class="fh5co-owl-text-wrap">
                 <div class="fh5co-owl-text text-center to-animate">
-                  <h1 class="fh5co-lead">Title</h1>
+                  <h1 class="fh5co-lead">Another title</h1>
                 <h2 class="fh5co-sub-lead"> 
                   @guest
                   <a href="/left-sidebar" class="btn" style="background-color:orange;">Start to learn</a>
@@ -49,7 +49,7 @@
             <div class="col-md-8 col-md-offset-2">
               <div class="fh5co-owl-text-wrap">
                 <div class="fh5co-owl-text text-center to-animate">
-                  <h1 class="fh5co-lead">title</h1>
+                  <h1 class="fh5co-lead">Last title</h1>
                 <h2 class="fh5co-sub-lead">
                   @guest
                   <a href="/left-sidebar" class="btn" style="background-color:orange;">Start to learn</a>
@@ -70,7 +70,7 @@
             <div class="col-md-8 col-md-offset-2">
               <div class="fh5co-owl-text-wrap">
                 <div class="fh5co-owl-text text-center to-animate">
-                  <h1 class="fh5co-lead">Last title</h1>
+                  <h1 class="fh5co-lead">Latest Title</h1>
                 <h2 class="fh5co-sub-lead">
                   @guest
                   <a href="/left-sidebar" class="btn" style="background-color:orange;">Start to learn</a>
