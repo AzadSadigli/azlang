@@ -16,6 +16,7 @@ class AdminController extends Controller
     public function addquestion(Request $request){
     	$ques = new Question;
     	$ques->question_body = $request->question_body;
+        $ques->rightanswer = $request->rightanswer;
     	$ques->ans_1 = $request->ans_1;
     	$ques->ans_2 = $request->ans_2;
     	$ques->ans_3 = $request->ans_3;
@@ -35,10 +36,17 @@ class AdminController extends Controller
     	$ques->update();
     	return redirect()->back()->with('succ4','Answered successfully');
     }
+    public function changeanswer(Request $request, $id){
+        $ques = Question::find($id);
+        $ques->rightanswer = $request->rightanswer;
+        $ques->update();
+        return redirect()->back()->with('succ44','Answered successfully');
+    }
     public function getallquestions(){
     	$ques = Question::orderBy('created_at', 'desc')->get();
     	return view('admin.table', ['ques' => $ques]);
     }
+
     public function topiccreation(){
     	return view('admin.addtopic');
     }

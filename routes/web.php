@@ -20,12 +20,15 @@ Route::get('/elements',function(){
 Route::get('/quiztest', function(){
 	return view('quiztest');
 });
+Route::get('testresult', 'UserController@testresult')->name('testresult');
+Route::post('checkresult', 'UserController@checkresult');
 Route::get('/quiz/100{id}',['as' => 'question', 'uses' => 'UserController@getquestion']);
 Route::get('/gramma/{id}', ['as' => 'gramma', 'uses' => 'UserController@getgramma']);
 Route::get('/admin', function(){
 	return view('admin.index');
 });
 Route::get('/questions', 'AdminController@getallquestions');
+Route::post('/changeanswer/{id}','AdminController@changeanswer');
 Route::get('/answers/{id}', ['as' => 'question', 'uses' => 'AdminController@question']);
 Route::post('/getanswers/{id}','AdminController@getanswers');
 Route::post('/addquestion', 'AdminController@addquestion');

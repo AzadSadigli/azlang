@@ -57,21 +57,7 @@
 												<b style="color: blue;"> D.</b> {{$ques-> ans_4}}</br>
 												<b style="color: blue;"> E.</b> {{$ques-> ans_5}}</td>
 											<td>
-												@if($ques->correct_ans_1 == 1)
-												A
-												@endif
-												@if($ques->correct_ans_2 == 1)
-												B
-												@endif
-												@if($ques->correct_ans_3 == 1)
-												C
-												@endif
-												@if($ques->correct_ans_4 == 1)
-												D
-												@endif
-												@if($ques->correct_ans_5 == 1)
-												E
-												@endif
+											{{$ques->rightanswer}}
 											</td>
 											<td>
 												<a type="button" class="btn btn-danger" data-toggle="modal" data-target="#myModal-{{$ques->id}}">Change</a>
@@ -84,20 +70,22 @@
 												        <button type="button" class="close" data-dismiss="modal">&times;</button>
 												        <h4 class="modal-title">Correct Answer</h4>
 												      </div>
+												      <form method="POST" action="/changeanswer/{{$ques->id}}">
 												      <div class="modal-body">
 												        <p>
-												        	<form>
-															  <input type="radio" name="correct_answer" value="a" checked> A<br>
-															  <input type="radio" name="correct_answer" value="b"> B<br>
-															  <input type="radio" name="correct_answer" value="c"> C <br>
-															  <input type="radio" name="correct_answer" value="d" checked> D<br>
-															  <input type="radio" name="correct_answer" value="e"> E<br>
-															</form> 
+												        {{ csrf_field() }}
+															  <input type="radio" name="rightanswer" value="a"> A<br>
+															  <input type="radio" name="rightanswer" value="b"> B<br>
+															  <input type="radio" name="rightanswer" value="c"> C <br>
+															  <input type="radio" name="rightanswer" value="d"> D<br>
+															  <input type="radio" name="rightanswer" value="e"> E<br>
 												        </p>
 												      </div>
 												      <div class="modal-footer">
+												      	<button class="btn btn-primary" type="submit" name="submit">Change it</button>
 												        <a type="button" class="btn btn-danger" data-dismiss="modal">Close</a>
 												      </div>
+												      </form>
 												    </div>
 												  </div>
 												</div>

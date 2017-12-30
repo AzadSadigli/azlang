@@ -130,7 +130,19 @@
 											</div>
 										</div>
 										
-
+										<div class="control-group">
+											<label class="control-label" for="basicinput">Choose Right Answer</label>
+											<div class="controls">
+												<select name="rightanswer" tabindex="1" data-placeholder="Select here.." class="span8" required="">
+													<option value="" selected="" disabled="">Select here..</option>
+													<option name="rightanswer" value="a">a</option>
+													<option name="rightanswer" value="b">b</option>
+													<option name="rightanswer" value="c">c</option>
+													<option name="rightanswer" value="d">d</option>
+													<option name="rightanswer" value="e">e</option>
+												</select>
+											</div>
+										</div>
 
 										<!-- <div class="control-group">
 											<label class="control-label" for="basicinput">Disabled Input</label>

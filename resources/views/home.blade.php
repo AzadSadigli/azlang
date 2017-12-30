@@ -43,6 +43,171 @@
                     </ul>
                 </div>
             </div>
+            <br>
+            <div class="panel panel-default">
+                <div class="panel-heading" style="">Test Results</div>
+
+                <div class="panel-body">
+                    <ul>
+                        @php
+                        $result = App\Results::where('user_id',[Auth::user()->id])->orderBy('created_at','desc')->get()
+                        @endphp
+                        @foreach($result as $result)
+                        <li>
+                            <b>
+                  @if(($result->givenans_5 == $result->rightans_5) && ($result->givenans_1 == $result->rightans_1) && ($result->givenans_2 == $result->rightans_2) && ($result->givenans_3 == $result->rightans_3) && ($result->givenans_4 == $result->rightans_4))
+                                        Your test result is 100%
+                                    
+                    @endif
+                    @if(!($result->givenans_5 == $result->rightans_5) && ($result->givenans_1 == $result->rightans_1) && ($result->givenans_2 == $result->rightans_2) && ($result->givenans_3 == $result->rightans_3) && ($result->givenans_4 == $result->rightans_4))
+                                        Your test result is 80%
+                                    
+                    @endif
+                    @if(($result->givenans_5 == $result->rightans_5) && !($result->givenans_1 == $result->rightans_1) && ($result->givenans_2 == $result->rightans_2) && ($result->givenans_3 == $result->rightans_3) && ($result->givenans_4 == $result->rightans_4))
+                                        Your test result is 80%
+                                    
+                    @endif
+                    @if(($result->givenans_5 == $result->rightans_5) && ($result->givenans_1 == $result->rightans_1) && !($result->givenans_2 == $result->rightans_2) && ($result->givenans_3 == $result->rightans_3) && ($result->givenans_4 == $result->rightans_4))
+                                        Your test result is 80%
+                                    
+                    @endif
+                    @if(($result->givenans_5 == $result->rightans_5) && ($result->givenans_1 == $result->rightans_1) && ($result->givenans_2 == $result->rightans_2) && !($result->givenans_3 == $result->rightans_3) && ($result->givenans_4 == $result->rightans_4))
+                                        Your test result is 80%
+                                    
+                    @endif
+                    @if(($result->givenans_5 == $result->rightans_5) && ($result->givenans_1 == $result->rightans_1) && ($result->givenans_2 == $result->rightans_2) && ($result->givenans_3 == $result->rightans_3) && !($result->givenans_4 == $result->rightans_4))
+                                        Your test result is 80%
+                                    
+                    @endif
+
+
+
+                    @if(!($result->givenans_5 == $result->rightans_5) && !($result->givenans_1 == $result->rightans_1) && ($result->givenans_2 == $result->rightans_2) && ($result->givenans_3 == $result->rightans_3) && ($result->givenans_4 == $result->rightans_4))
+                                        Your test result is 60%
+                                    
+                    @endif
+                    @if(!($result->givenans_5 == $result->rightans_5) && ($result->givenans_1 == $result->rightans_1) && !($result->givenans_2 == $result->rightans_2) && ($result->givenans_3 == $result->rightans_3) && ($result->givenans_4 == $result->rightans_4))
+                                        Your test result is 60%
+                                    
+                    @endif
+                    @if(!($result->givenans_5 == $result->rightans_5) && ($result->givenans_1 == $result->rightans_1) && ($result->givenans_2 == $result->rightans_2) && !($result->givenans_3 == $result->rightans_3) && ($result->givenans_4 == $result->rightans_4))
+                                        Your test result is 60%
+                                    
+                    @endif
+                    @if(!($result->givenans_5 == $result->rightans_5) && ($result->givenans_1 == $result->rightans_1) && ($result->givenans_2 == $result->rightans_2) && ($result->givenans_3 == $result->rightans_3) && !($result->givenans_4 == $result->rightans_4))
+                                        Your test result is 60%
+                                    
+                    @endif
+
+                    
+                    @if(($result->givenans_5 == $result->rightans_5) && !($result->givenans_1 == $result->rightans_1) && !($result->givenans_2 == $result->rightans_2) && ($result->givenans_3 == $result->rightans_3) && ($result->givenans_4 == $result->rightans_4))
+                                        Your test result is 60%
+                                    
+                    @endif
+                    @if(($result->givenans_5 == $result->rightans_5) && !($result->givenans_1 == $result->rightans_1) && ($result->givenans_2 == $result->rightans_2) && !($result->givenans_3 == $result->rightans_3) && ($result->givenans_4 == $result->rightans_4))
+                                        Your test result is 60%
+                                    
+                    @endif
+                    @if(($result->givenans_5 == $result->rightans_5) && !($result->givenans_1 == $result->rightans_1) && ($result->givenans_2 == $result->rightans_2) && ($result->givenans_3 == $result->rightans_3) && !($result->givenans_4 == $result->rightans_4))
+                                        Your test result is 60%
+                                    
+                    @endif
+                    @if(($result->givenans_5 == $result->rightans_5) && ($result->givenans_1 == $result->rightans_1) && !($result->givenans_2 == $result->rightans_2) && !($result->givenans_3 == $result->rightans_3) && ($result->givenans_4 == $result->rightans_4))
+                                        Your test result is 60%
+                                    
+                    @endif
+                    @if(($result->givenans_5 == $result->rightans_5) && ($result->givenans_1 == $result->rightans_1) && !($result->givenans_2 == $result->rightans_2) && ($result->givenans_3 == $result->rightans_3) && !($result->givenans_4 == $result->rightans_4))
+                                        Your test result is 60%
+                                    
+                    @endif
+                    @if(($result->givenans_5 == $result->rightans_5) && ($result->givenans_1 == $result->rightans_1) && ($result->givenans_2 == $result->rightans_2) && !($result->givenans_3 == $result->rightans_3) && !($result->givenans_4 == $result->rightans_4))
+                                        Your test result is 60%
+                                    
+                    @endif
+
+
+
+                    @if(!($result->givenans_5 == $result->rightans_5) && !($result->givenans_1 == $result->rightans_1) && !($result->givenans_2 == $result->rightans_2) && ($result->givenans_3 == $result->rightans_3) && ($result->givenans_4 == $result->rightans_4))
+                                        Your test result is 40%
+                                    
+                    @endif
+                    @if(!($result->givenans_5 == $result->rightans_5) && !($result->givenans_1 == $result->rightans_1) && ($result->givenans_2 == $result->rightans_2) && !($result->givenans_3 == $result->rightans_3) && ($result->givenans_4 == $result->rightans_4))
+                                        Your test result is 40%
+                                    
+                    @endif
+                    @if(!($result->givenans_5 == $result->rightans_5) && !($result->givenans_1 == $result->rightans_1) && ($result->givenans_2 == $result->rightans_2) && ($result->givenans_3 == $result->rightans_3) && !($result->givenans_4 == $result->rightans_4))
+                                        Your test result is 40%
+                                    
+                    @endif
+                    @if(!($result->givenans_5 == $result->rightans_5) && ($result->givenans_1 == $result->rightans_1) && !($result->givenans_2 == $result->rightans_2) && !($result->givenans_3 == $result->rightans_3) && ($result->givenans_4 == $result->rightans_4))
+                                        Your test result is 40%
+                                    
+                    @endif
+                    @if(!($result->givenans_5 == $result->rightans_5) && ($result->givenans_1 == $result->rightans_1) && !($result->givenans_2 == $result->rightans_2) && ($result->givenans_3 == $result->rightans_3) && !($result->givenans_4 == $result->rightans_4))
+                                        Your test result is 40%
+                                    
+                    @endif
+                    @if(!($result->givenans_5 == $result->rightans_5) && ($result->givenans_1 == $result->rightans_1) && ($result->givenans_2 == $result->rightans_2) && !($result->givenans_3 == $result->rightans_3) && !($result->givenans_4 == $result->rightans_4))
+                                        Your test result is 40%
+                                    
+                    @endif
+                    @if(($result->givenans_5 == $result->rightans_5) && !($result->givenans_1 == $result->rightans_1) && !($result->givenans_2 == $result->rightans_2) && !($result->givenans_3 == $result->rightans_3) && ($result->givenans_4 == $result->rightans_4))
+                                        Your test result is 40%
+                                    
+                    @endif
+                    @if(($result->givenans_5 == $result->rightans_5) && !($result->givenans_1 == $result->rightans_1) && ($result->givenans_2 == $result->rightans_2) && !($result->givenans_3 == $result->rightans_3) && !($result->givenans_4 == $result->rightans_4))
+                                        Your test result is 40%
+                                    
+                    @endif
+                    @if(($result->givenans_5 == $result->rightans_5) && ($result->givenans_1 == $result->rightans_1) && !($result->givenans_2 == $result->rightans_2) && !($result->givenans_3 == $result->rightans_3) && !($result->givenans_4 == $result->rightans_4))
+                                        Your test result is 40%
+                                    
+                    @endif
+
+
+
+
+                    @if(($result->givenans_5 == $result->rightans_5) && !($result->givenans_1 == $result->rightans_1) && !($result->givenans_2 == $result->rightans_2) && !($result->givenans_3 == $result->rightans_3) && !($result->givenans_4 == $result->rightans_4))
+                                        Your test result is 20%
+                                    
+                    @endif
+                    @if(!($result->givenans_5 == $result->rightans_5) && ($result->givenans_1 == $result->rightans_1) && !($result->givenans_2 == $result->rightans_2) && !($result->givenans_3 == $result->rightans_3) && !($result->givenans_4 == $result->rightans_4))
+                                        Your test result is 20%
+                                    
+                    @endif
+                    @if(!($result->givenans_5 == $result->rightans_5) && !($result->givenans_1 == $result->rightans_1) && ($result->givenans_2 == $result->rightans_2) && !($result->givenans_3 == $result->rightans_3) && !($result->givenans_4 == $result->rightans_4))
+                                        Your test result is 20%
+                                    
+                    @endif
+                    @if(!($result->givenans_5 == $result->rightans_5) && !($result->givenans_1 == $result->rightans_1) && !($result->givenans_2 == $result->rightans_2) && !($result->givenans_3 == $result->rightans_3) && ($result->givenans_4 == $result->rightans_4))
+                                        Your test result is 20%
+                                    
+                    @endif
+                    @if(!($result->givenans_5 == $result->rightans_5) && !($result->givenans_1 == $result->rightans_1) && !($result->givenans_2 == $result->rightans_2) && ($result->givenans_3 == $result->rightans_3) && !($result->givenans_4 == $result->rightans_4))
+                                        Your test result is 20%
+                                    
+                    @endif
+
+
+
+
+
+
+
+
+                    @if(!($result->givenans_5 == $result->rightans_5) && !($result->givenans_1 == $result->rightans_1) && !($result->givenans_2 == $result->rightans_2) && !($result->givenans_3 == $result->rightans_3) && !($result->givenans_4 == $result->rightans_4))
+                                        Your test result is 0%
+                                    
+                    @endif
+
+
+
+</b>
+                         </li>
+                        @endforeach
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
 </div>
