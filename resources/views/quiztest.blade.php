@@ -22,13 +22,16 @@
 			<div class="row">
 				<div class="col-md-8 col-md-push-4">
 
-					<form action="" method="POST">
+					<form name="form1" id="form1" action="" method="POST">
+						{{ csrf_field() }}
+
 						@php
-						$ques = App\Question::orderBy('id','asc')->get()
+						$ques = App\Question::orderBy('id','asc')->take(10)->get()
 						@endphp
 						<?php $i=0 ?>
 
 						@foreach($ques as $ques)
+
 						<?php $i++ ?>
 							<h2>{{$ques->id}}. {{$ques-> question_body}}</h2>
 							<!-- <p></p> -->
@@ -47,9 +50,11 @@
 							@if(!count($ques->ans_5)==0)
 							  <input type="radio" name="givenans_1" value="e"> {{$ques->ans_5}}<br>
 							@endif
-							<input type="hidden" name="">
+							<input type="hidden" name="rightans_1" value="{{$ques->rightanswer}}">
 							<br>
 						@endforeach
+
+						<button class="btn btn-primary" type="submit" name="submit">Submit it</button>
 
 					</form>
 					<div class="fh5co-spacer fh5co-spacer-xxs"></div>

@@ -10,7 +10,7 @@
                   <h1 class="fh5co-lead">First Title</h1>
                 <h2 class="fh5co-sub-lead">
                   @guest
-                  <a href="/left-sidebar" class="btn" style="background-color:orange;">Start to learn</a>
+                  <a href="/home" class="btn" style="background-color:orange;">Start to learn</a>
                   @else
                   <a href="/register" class="btn" style="background-color:orange;">Learn with us</a>
                   @endguest
@@ -30,8 +30,8 @@
                 <div class="fh5co-owl-text text-center to-animate">
                   <h1 class="fh5co-lead">Another title</h1>
                 <h2 class="fh5co-sub-lead"> 
-                  @guest
-                  <a href="/left-sidebar" class="btn" style="background-color:orange;">Start to learn</a>
+                   @guest
+                  <a href="/home" class="btn" style="background-color:orange;">Start to learn</a>
                   @else
                   <a href="/register" class="btn" style="background-color:orange;">Learn with us</a>
                   @endguest
@@ -51,10 +51,10 @@
                 <div class="fh5co-owl-text text-center to-animate">
                   <h1 class="fh5co-lead">Last title</h1>
                 <h2 class="fh5co-sub-lead">
-                  @guest
-                  <a href="/left-sidebar" class="btn" style="background-color:orange;">Start to learn</a>
+                   @guest
+                  <a href="/home" class="btn" style="background-color:orange;">Start to learn</a>
                   @else
-                  <a class="btn" style="background-color:orange;">Learn with us</a>
+                  <a href="/register" class="btn" style="background-color:orange;">Learn with us</a>
                   @endguest
                 </h2>
                 </div>
@@ -72,10 +72,10 @@
                 <div class="fh5co-owl-text text-center to-animate">
                   <h1 class="fh5co-lead">Latest Title</h1>
                 <h2 class="fh5co-sub-lead">
-                  @guest
-                  <a href="/left-sidebar" class="btn" style="background-color:orange;">Start to learn</a>
+                   @guest
+                  <a href="/home" class="btn" style="background-color:orange;">Start to learn</a>
                   @else
-                  <a class="btn" style="background-color:orange;">Learn with us</a>
+                  <a href="/register" class="btn" style="background-color:orange;">Learn with us</a>
                   @endguest
                 </h2>
                 </div>

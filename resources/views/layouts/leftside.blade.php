@@ -1,44 +1,38 @@
 <div class="col-md-4 col-md-pull-8" style="box-shadow: 1px 1px 0px 0px black;">
 
   <div class="fh5co-sidebox">
-    <h3 class="fh5co-sidebox-lead">Image List</h3>
+    <h3 class="fh5co-sidebox-lead">Recommended Topic</h3>
     <ul class="fh5co-post">
-      <li>
-        <a href="#">
-          <div class="fh5co-post-media"><img src="{{ asset('images/slide_1.jpg')}}" ></div>
-          <div class="fh5co-post-blurb">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            <span class="fh5co-post-meta">Oct. 12, 2015</span>
-          </div>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <div class="fh5co-post-media"><img src="{{ asset('images/slide_2.jpg')}}" ></div>
-          <div class="fh5co-post-blurb">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            <span class="fh5co-post-meta">Oct. 12, 2015</span>
-          </div>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <div class="fh5co-post-media"><img src="{{ asset('images/slide_3.jpg')}}" ></div>
-          <div class="fh5co-post-blurb">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            <span class="fh5co-post-meta">Oct. 12, 2015</span>
-          </div>
-        </a>
-      </li>
+      
+      @php
+              $gram = App\Gramma::inRandomOrder()->take(3)->get()
+              @endphp
+              @foreach($gram as $gram)
+              <li>
+                <a href="/gramma/{{$gram->id}}" style="color: black;">
+                    {{$gram->title}}
+                    <span class="fh5co-post-meta">Topic: 
+                    @php
+                    $topic = App\Topic::all()
+                    @endphp
+                    @foreach($topic as $topic)
+                    @if($topic->id==$gram->topic_id)
+                      {{$topic->name_topic}}
+                    @endif
+                    @endforeach
+                    </span>
+                </a>
+              </li>
+              @endforeach
     </ul>
 
   </div>
 
-  <div class="fh5co-sidebox">
+ <!--  <div class="fh5co-sidebox">
     <h3 class="fh5co-sidebox-lead">Paragraph</h3>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, temporibus vitae. Dolores sequi, animi dolorem. Ullam minima laudantium culpa dolorem, nulla doloribus totam obcaecati reprehenderit quasi nam eius autem nihil.</p>
-  </div>
-
+  </div> -->
+<!-- 
   <div class="fh5co-sidebox">
     <h3 class="fh5co-sidebox-lead">Check list</h3>
     <ul class="fh5co-list-check">
@@ -48,5 +42,5 @@
       <li>Repudiandae voluptate dolorem voluptas.</li>
       <li>Voluptate cupiditate, est laborum?</li>
     </ul>
-  </div>
+  </div> -->
 </div>

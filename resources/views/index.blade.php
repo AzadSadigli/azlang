@@ -49,7 +49,7 @@
 							<div class="fh5co-feature-text">
 								<h3>Test Yourself! </h3>
 								<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
-								<p><a href="#">Read more</a></p>
+								<p><a href="quiztest">Read more</a></p>
 							</div>
 						</div>
 					</div>
@@ -61,7 +61,7 @@
 							<div class="fh5co-feature-text">
 								<h3>What is your level?</h3>
 								<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
-								<p><a href="#">Read more</a></p>
+								<p><a href="/quiztest">Read more</a></p>
 							</div>
 						</div>
 						<div class="fh5co-feature no-border">

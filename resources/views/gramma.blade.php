@@ -89,7 +89,7 @@
 					</div>
 
 					<div class="fh5co-sidebox">
-						<h3 class="fh5co-sidebox-lead">Quize about <i><b>{{$gramma->gramma}}</b></i></h3>
+						<h3 class="fh5co-sidebox-lead">Quizs about <i><b>{{$gramma->gramma}}</b></i></h3>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, temporibus vitae. Dolores sequi, animi dolorem. Ullam minima laudantium culpa dolorem, nulla doloribus totam obcaecati reprehenderit quasi nam eius autem nihil.</p>
 					</div>
 
